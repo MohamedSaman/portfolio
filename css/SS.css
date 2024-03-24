@@ -1,3 +1,6 @@
+*{
+    overflow-x: none;
+}
 .container{
     display: flex;
     flex-direction: column;
@@ -172,4 +175,10 @@ button{
     display: flex;
     justify-content: start;
 
+}
+h5{
+    overflow: hidden;
+}
+.pro{
+    cursor: pointer;
 }

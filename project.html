@@ -47,9 +47,12 @@
                 <div class="navi">
                     <a  href="project.html" style="text-decoration: none;color: rgb(42, 23, 209);"> <span class="hht"> Projects</span></a>
                 </div>  
+                <div class="navi">
+                    <a  href="skil.html" style="text-decoration: none; color: black;"> <span class="hht"> Skills</span></a>
+                </div> 
                     <div class="navi">
-                        <span class="hht">Experience</span>
-                    </div>  
+                        <span class="hht">Skills</span>
+                    </div> 
                     <div class="navi">
                         <span class="hht">image</span>
                     </div>  
@@ -61,10 +64,57 @@
                     </div>    
             </div>
         </div>
-        <h1 style="color: black; font-family: 'Times New Roman', Times, serif; margin: 40px; padding: 25px; margin-left: 100px;">Projects</h1>
+        <h1 style="color: black; font-family: 'Times New Roman', Times, serif; margin: 30px; padding: 20px; margin-left: 75px;">Projects</h1>
           
         </div>
-  <!-- offers card end  -->
+    </div>
+  <!-- Start card end  -->
+  <div class="row">
+    <div class="project d-flex  col-md-5 ">
+        <div class="pp" style="display: flex; flex-wrap: wrap; justify-content:center;">
+            <div class="pro mx-2" style="height: 100px; overflow: hidden;  ;">
+                <h5>Project xiteb </h5>
+                <a  onclick="preview('https://xiteb-saman.netlify.app/')"><img src="img/xiteb.png" alt="" srcset="" height="200" width="200"/></a>
+            </div>
+            <div class="pro mx-2" style="height: 100px; overflow: hidden;">
+                <h5>Billing System </h5>
+                <a  onclick="preview('https://jaffnagold.netlify.app/')"><img src="img/jaffnagold.png" alt="" srcset="" height="200"/></a>
+            </div>
+            <div class="pro mx-2" style="height: 100px; overflow: hidden;">
+                <h5>Responsive Web </h5>
+                <a  onclick="preview('https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7157388318983278592?compact=1')"><img src="img/res.jpeg" alt="" srcset="" width="200" height="200"/></a>
+            </div>
+            <div class="pro mx-2" style="height: 100px; overflow: hidden;">
+                <h5>Ayra E-commerce </h5>
+                <a  onclick="preview('https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7157309247561633792')"><img src="img/ayra-1.jpeg" alt="" srcset="" width="200" height="200"/></a>
+            </div><div class="pro mx-1" style="height: 100px; overflow: hidden;  ;">
+                <h5>C# Project  </h5>
+                <a  onclick="preview('https://www.linkedin.com/in/shaman003/details/projects/')"><img src="img/shim.jpeg" alt="" srcset="" height="200" width="200"/></a>
+            </div>
+            <div class="pro mx-2" style="height: 100px; overflow: hidden;">
+                <h5>Project xiteb </h5>
+                <a  onclick="preview('https://jaffnagold.netlify.app/')"><img src="img/jaffnagold.png" alt="" srcset="" height="200"/></a>
+            </div>
+           
+        </div>
+    </div>
+    <div class="project d-flex  col-md-6 mx-0" style="width: 800px; padding: 0;">
+        <div class="pp d-flex justify-content-center">
+            <div class="card mx-0">
+                <iframe id="previewFrame"  height="500" width="700" frameborder="0" allowfullscreen="" title="Embedded post"></iframe> 
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function preview(url) {
+        // Set the iframe source to the provided URL
+        document.getElementById('previewFrame').src = url;
+
+    }
+</script>
+
 
       
     </body>
