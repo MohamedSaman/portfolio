@@ -8,9 +8,78 @@
 </head>
 <body>
 
-    <iframe width="560" height="315" src="https://youtu.be/EvMS73TWIQA?si=oOjJJngBtVbJz96R" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/EvMS73TWIQA?si=oOjJJngBtVbJz96R&amp;controls=0&amp;start=20" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 <!-- Bootstrap JS and Popper.js (Optional) -->
+<!-- Modal container -->
+<div id="myModal" class="modal">
+    <span class="close" onclick="document.getElementById('myModal').style.display = 'none'">&times;</span>
+    <img class="modal-content" id="modalImg">
+</div>
+
+<!-- Image cards -->
+<div class="container" style="margin-bottom: 10px;">
+    <div class="row mb-2">
+        <!-- First card -->
+        <div class="col-sm-3">
+            <div class="card text-center d-flex align-items-between" style="width: 100%; height: 17rem;box-shadow: #a19e9e 4px 6px 4px;">
+                <img src="img/certificate/python UOM.jpg" width="50px" id="imgC" height="250px" class="card-img-top" alt="..." onclick="displayImage(this.src)">
+                <div class="card-body">
+                    <h6 class="card-title mb-2" style="font-weight: bold;color: #333;">Python Developer Beginner University of Moratowa - 2022</h6>
+                </div>
+            </div>
+        </div>
+
+        <!-- Second card -->
+        <div class="col-sm-3">
+            <div class="card text-center d-flex align-items-between" style="width: 100%; height: 17rem;box-shadow: #a19e9e 4px 6px 4px;">
+                <img src="img/certificate/front-end UOM.jpg" id="imgC"  width="50px" height="250px" class="card-img-top" alt="..." onclick="displayImage(this.src)">
+                <div class="card-body">
+                    <h6 class="card-title mb-2" style="font-weight: bold;color: #333;">Front End Developer University of Moratowa - 2022</h6>
+                </div>
+            </div>
+        </div>
+
+        <!-- Third card -->
+        <div class="col-sm-3">
+            <div class="card text-center d-flex align-items-between" style="width: 100%; height: 17rem;box-shadow: #a19e9e 4px 6px 4px;">
+                <img src="img/certificate/guvi.jpg" width="50px" id="imgC"  height="250px" class="card-img-top" alt="..." onclick="displayImage(this.src)">
+                <div class="card-body">
+                    <h6 class="card-title mb-2" style="font-weight: bold;color: #333;">Front End Developer University of GUVI - 2023</h6>
+                </div>
+            </div>
+        </div>
+
+        <!-- Fourth card -->
+        <div class="col-sm-3">
+            <div class="card text-center d-flex align-items-between" style="width: 100%; height: 17rem;box-shadow: #a19e9e 4px 6px 4px;">
+                <img src="img/certificate/wordpress.jpg" id="imgC"  width="50px" height="250px" class="card-img-top" alt="..." onclick="displayImage(this.src)">
+                <div class="card-body">
+                    <h6 class="card-title mb-2" style="font-weight: bold;color: #333;">Create a Website Using Wordpress : Free Hosting & Sub-domain from Coursera  - 2024</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    function displayImage(imageSrc) {
+        // Get the modal element
+        var modal = document.getElementById("myModal");
+
+        // Get the image element
+        var img = document.getElementById("modalImg");
+        img.src = imageSrc;
+
+        // Display the modal
+        modal.style.display = "block";
+    }
+
+    // Close the modal when the user clicks outside of it
+    window.onclick = function(event) {
+        var modal = document.getElementById("myModal");
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
 
 </body>
 </html>
