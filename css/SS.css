@@ -229,4 +229,9 @@ h5{
         text-decoration: none;
         cursor: pointer;
     }
-
+    .imgs:hover,
+    .imgs:focus {
+        color: #bbb;
+        text-decoration: none;
+        cursor: pointer;
+    }
