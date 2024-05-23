@@ -127,6 +127,7 @@ button{
     border-radius: 20px;
     min-width: 90px;
     cursor: pointer;
+    margin: 2px;
 }
 
 .hht{
