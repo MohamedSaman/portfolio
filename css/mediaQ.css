@@ -1,0 +1,86 @@
+/* Media Queries */
+
+/* Mobile Styles */
+@media only screen and (max-width: 767px) {
+    .hlonav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav {
+        margin-left: 0;
+        gap: 5px;
+        overflow-x: auto;
+        overflow-y: hidden;
+        -ms-overflow-style: none; /* Internet Explorer 10+ */
+        scrollbar-width: none; /* Firefox */
+        white-space: nowrap;
+    }
+
+    .nav::-webkit-scrollbar { /* WebKit browsers */
+        display: none;
+    }
+
+    .navi {
+        min-width: 70px;
+        height: 35px;
+    }
+
+    .hht {
+        font-size: 12px;
+    }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .hlonav {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .nav {
+        margin-left: 50px;
+        gap: 7px;
+        overflow-x: auto;
+        overflow-y: hidden;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        white-space: nowrap;
+    }
+
+    .nav::-webkit-scrollbar {
+        display: none;
+    }
+
+    .navi {
+        min-width: 80px;
+        height: 38px;
+    }
+
+    .hht {
+        font-size: 13px;
+    }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 1024px) {
+    .hlonav {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .nav {
+        margin-left: 145px;
+        gap: 8px;
+        overflow-x: hidden;
+    }
+
+    .navi {
+        min-width: 90px;
+        height: 42px;
+    }
+
+    .hht {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,287 @@
+* {
+    overflow-x: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-top: 50px;
+    margin-bottom: 16px;
+}
+
+.goxjub {
+    width: 25px;
+    height: 35px;
+    margin-right: 5px;
+}
+
+.kkk {
+    width: 25px;
+    height: 35px;
+    margin-right: 5px;
+}
+
+.Gdd5U {
+    width: 30px;
+}
+
+.box {
+    border: none;
+    width: 80%;
+    outline: none;
+}
+
+.area {
+    display: flex;
+    flex-direction: row;
+    width: 52%;
+    height: 49px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 35px;
+    border: 1px solid #ccc;
+    padding: 2px;
+}
+
+.abbb {
+    padding: 50px;
+    width: 38%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+button {
+    border: none;
+    padding: 5px;
+    margin: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header {
+    width: 100%;
+    height: 72px;
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: row;
+}
+
+.area2 {
+    display: flex;
+    flex-direction: row;
+    width: 55%;
+    height: 47px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 35px;
+    box-shadow: #dbd5d5 4px 2px 2px 2px;
+    border: 1px solid #ccc;
+    padding: 2px;
+    margin-bottom: 0;
+}
+
+.hlo {
+    margin-top: 5px;
+    margin-bottom: -6px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+
+.logos {
+    margin: 30px;
+}
+
+.hlonav {
+    margin-top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+
+.nav {
+    margin-left: 145px;
+    display: flex;
+    -ms-overflow-style: none;
+    gap: 8px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scrollbar-width: none;
+    white-space: nowrap;
+}
+
+.nav::-webkit-scrollbar {
+    display: none;
+}
+
+.navi {
+    display: flex;
+    align-items: center;
+    height: 42px;
+    justify-content: center;
+    background: #fff;
+    border: 1px solid #dadce0;
+    box-sizing: border-box;
+    border-radius: 20px;
+    min-width: 90px;
+    cursor: pointer;
+    margin: 2px;
+}
+
+.hht {
+    font-family: Google Sans, arial, sans-serif-medium, sans-serif;
+    font-size: 14px;
+    width: fit-content;
+}
+
+.main {
+    height: 25px;
+    width: 100%;
+    border-top: 1px solid #cccccc;
+    margin-top: 15px;
+}
+
+.hr {
+    margin-left: 155px;
+    margin-top: 5px;
+    overflow: hidden;
+    color: #cccccc;
+}
+
+.main-name {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 155px;
+    margin-top: 9px;
+    margin-right: 5px;
+}
+
+.navName {
+    display: flex;
+    -ms-overflow-style: none;
+    gap: 8px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scrollbar-width: none;
+    white-space: wrap;
+    overflow: hidden;
+    margin-left: 40px;
+}
+
+.images-set {
+    margin-left: 145px;
+    display: flex;
+    justify-content: start;
+}
+
+h5 {
+    overflow: hidden;
+}
+
+.pro {
+    cursor: pointer;
+}
+
+.modal {
+    display: none;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+    max-width: 600px;
+    max-height: 600px;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.close {
+    position: absolute;
+    top: -5px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.imgs:hover,
+.imgs:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.question-container {
+    align-items: center;
+    margin-bottom: 20px;
+    border: 1px solid #f0eded;
+    padding-bottom: 10px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.question-text {
+    font-weight: bold;
+    color: #1a0dab;
+}
+
+.answer-container {
+    margin-left: 20px;
+    display: none;
+}
+
+.answer-text {
+    color: #545454;
+}
+
+.arrow-icon {
+    size: 5px;
+    padding: 10px;
+    border-radius: 50%;
+    float: right;
+    transition: transform 0.3s ease-in-out;
+}
+
+.open .arrow-icon {
+    transform: rotate(180deg);
+}
+
