@@ -235,3 +235,46 @@ h5{
         text-decoration: none;
         cursor: pointer;
     }
+    /* .question-container */
+    .question-container {
+        align-items: center;
+        margin-bottom: 20px;
+        border: 1px  solid #f0eded; /* Divider line */
+        padding-bottom: 10px;
+        cursor: pointer;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        padding: 10px;
+      }
+  
+      /* Question text */
+      .question-text {
+        font-weight: bold;
+        color: #1a0dab; /* Google's blue color */
+      }
+  
+      /* Answer container */
+      .answer-container {
+        margin-left: 20px; /* Indent the answer */
+        display: none; /* Initially hide the answer */
+      }
+  
+      /* Answer text */
+      .answer-text {
+        color: #545454; /* Google's gray color */
+      }
+  
+      /* Arrow icon */
+      .arrow-icon {
+        size: 5px;
+        padding: 10px;
+        border-radius: 50%;
+        float: right;
+        transition: transform 0.3s ease-in-out; /* Smooth transition */
+      }
+  
+      /* Rotate arrow icon when answer is shown */
+      .open .arrow-icon {
+        transform: rotate(180deg);
+      }
+  

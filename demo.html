@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>People also ask</title>
+  <style>
+    /* Reset default margin and padding */
+    body, h1, p {
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Main container */
+    .container {
+      padding: 5px;
+      width: 100%; /* Adjust width as needed */
+      font-family: Arial, sans-serif; /* Google uses Roboto font, you can adjust */
+    }
+
+    /* Question container */
+    .question-container {
+      align-items: center;
+      margin-bottom: 20px;
+      border-bottom: 1px  solid #f0eded; /* Divider line */
+      padding-bottom: 10px;
+      cursor: pointer;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      padding: 10px;
+    }
+
+    /* Question text */
+    .question-text {
+      font-weight: bold;
+      color: #1a0dab; /* Google's blue color */
+    }
+
+    /* Answer container */
+    .answer-container {
+      margin-left: 20px; /* Indent the answer */
+      display: none; /* Initially hide the answer */
+    }
+
+    /* Answer text */
+    .answer-text {
+      color: #545454; /* Google's gray color */
+    }
+
+    /* Arrow icon */
+    .arrow-icon {
+      size: 5px;
+      padding: 10px;
+      border-radius: 50%;
+      float: right;
+      transition: transform 0.3s ease-in-out; /* Smooth transition */
+    }
+
+    /* Rotate arrow icon when answer is shown */
+    .open .arrow-icon {
+      transform: rotate(180deg);
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <!-- Question 1 -->
+  <div class="question-container" onclick="toggleAnswer(this)">
+    <div class="question-text">What is Lorem Ipsum?  <span class="arrow-icon">^</span></div>
+    <!-- Arrow icon -->
+   
+    <!-- Answer -->
+    <div class="answer-container">
+      <div class="answer-text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ut ipsum urna. Mauris eget fermentum metus.
+      </div>
+    </div>
+  </div>
+
+  <!-- Question 2 -->
+  <div class="question-container" onclick="toggleAnswer(this)">
+    <div class="question-text">Why do we use it?    <span class="arrow-icon">&#x25B6;</span>
+    </div>
+    <!-- Arrow icon -->
+    <!-- Answer -->
+    <div class="answer-container">
+      <div class="answer-text">
+        Fusce ut malesuada sapien, in placerat nunc. Integer scelerisque ligula id orci suscipit, in lobortis velit accumsan.
+      </div>
+    </div>
+  </div>
+  <div class="question-container" onclick="toggleAnswer(this)">
+    <div class="question-text">Why do we use it?     <span class="arrow-icon">&#x25B6;</span>
+    </div>
+    <!-- Arrow icon -->
+    <!-- Answer -->
+    <div class="answer-container">
+      <div class="answer-text">
+        Fusce ut malesuada sapien, in placerat nunc. Integer scelerisque ligula id orci suscipit, in lobortis velit accumsan.
+      </div>
+    </div>
+  </div>
+  <!-- Add more questions and answers here -->
+</div>
+
+<script>
+  // Function to toggle the visibility of the answer
+  function toggleAnswer(element) {
+    var answer = element.querySelector('.answer-container');
+    element.classList.toggle('open');
+    answer.style.display = (answer.style.display === 'block') ? 'none' : 'block';
+  }
+</script>
+
+</body>
+</html>
